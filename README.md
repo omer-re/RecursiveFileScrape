@@ -85,6 +85,9 @@ After compilation run the relevant clean script to remove the unneeded files:
 .\cleanWindowsBuildFiles.bat
 ```
 
+Run command on linux
+`./recursivescrape.py -c {\"csplus\":\"3b87e6646a01fbdc28f9031703dc1304\"} -u "https://cs-haifa.com/site/cs/" --id "regular-data" -vv -r`
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
