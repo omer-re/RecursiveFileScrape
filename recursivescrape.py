@@ -55,6 +55,7 @@ async def __scrape_page(
     file_path = os.path.join(
         download_path, url.replace("https://", "").replace("http://", "")
     )
+    if file_path.endswith('index'): return
     if os.path.isfile(file_path) and not overwrite:
         if verbosity >= 1:
             tqdm.write(f"{file_path.split('/')[-1]} already exists, skipping")
